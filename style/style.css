@@ -10,12 +10,14 @@ span {
 
 
 .el1 {
-    background-color: #93A603;
+    /* background-color: #93A603; */
+    background-color: #212121;
 }
 
 
 .el2 {
-    background-color: #0A89A6;
+    /* background-color: #0A89A6; */
+    background-color: #278C7A;
 }
 
 
@@ -25,10 +27,431 @@ span {
 
 
 .el4 {
-    background-color: #278C7A;
+    /* background-color: #278C7A; */
+    background-color: #0A89A6;
 }
 
 
 .el5 {
-    background-color: #212121;
+    /* background-color: #212121; */
+    background-color: #93A603;
 }
+
+/* Ex 1. Mostrar els ítems en 2 columnes amb la propietat grid-template-columns */
+/* .container{
+    display: grid;
+    grid-template-columns: auto auto;
+} */
+
+/* Ex2. Mostrar els ítems en 4 columnes amb la propietat grid-template-columns,
+la primera columna té 250px, la segona 1fr, la tercera 2fr i la quarta 20%. */
+/* .container{
+    display: grid;
+    grid-template-columns: 250px 1fr 2fr 20%;
+} */
+
+/* Ex3. Posicionar els números de cada element en el centre amb flex */
+/* .container{
+    display: grid;
+    grid-template-columns: 250px 1fr 2fr 20%;
+    justify-content: center;
+    align-items: center;
+}
+
+.elem{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} */
+
+/* ¿necesario? */
+/* .elem span {
+    background-color: rgba(255, 255, 255, .5);
+    border-radius: 50%;
+    font-size: 1.5em;
+    line-height: 3em;
+    text-align: center;
+    width: 3em;
+    display: block;
+}  */
+
+/* Ex4. Deixar marges entre els elements amb la propietat gap: per cada columna deixarem 10px i per cada fila 20px */
+/* .container{
+    display: grid;
+    grid-template-columns: 250px 1fr 2fr 20%;
+    justify-content: center;
+    align-items: center;
+    gap: 20px 10px;
+
+}
+
+.elem{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} */
+
+
+/* Ex5. La fila 2 li posarem una altura de 300px utilitzant la propietat grid-template-rows */
+/* .container{
+    display: grid;
+    grid-template-columns: 250px 1fr 2fr 20%;
+    grid-template-rows: auto 300px auto;
+    justify-content: center;
+    align-items: center;
+    gap: 20px 10px;
+
+}
+
+.elem{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+} */
+
+/* Ex6. L’element 1 ocupi l’espai de dos columnes amb les propietats grid-column-start i grid-column-end */
+/* .container{
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20%;
+    grid-template-rows: auto 300px auto;
+    justify-content: center;
+    align-items: center;
+    gap: 20px 10px;
+
+}
+
+.elem{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+.item1{
+    grid-column-start: 1;
+    grid-column-end:3;
+} */
+
+/* Ex7. L’element 2 ocupi l’espai de dos columnes amb les propietats grid-column-start i grid-column-end. 
+I que ocupi dos files amb les propietats grid-row-start i grid-row-end  */
+/* .container {
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20%;
+    grid-template-rows: auto 300px auto;
+    justify-content: center;
+    align-items: center;
+    gap: 20px 10px;
+
+}
+
+.elem {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.item1 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+.item2 {
+    grid-column-start: 3;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end: 3;
+} */
+
+/* Ex8. Li traiem l’altura de la segona columna. */
+/* .container {
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20%;
+    grid-template-rows: auto auto auto;
+    justify-content: center;
+    align-items: center;
+    gap: 20px 10px;
+
+}
+
+.elem {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.item1 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+.item2 {
+    grid-column-start: 3;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end: 3;
+} */
+
+
+/* Ex9. L’element 9 ocupi les 4 columnes. */
+/* .container {
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20%;
+    grid-template-rows: auto auto auto;
+    justify-content: center;
+    align-items: center;
+    gap: 20px 10px;
+
+}
+
+.elem {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.item1 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+.item2 {
+    grid-column-start: 3;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+
+.item9{
+    grid-column-start: 1;
+    grid-column-end: 5;
+
+} */
+
+
+/* Ex9.1 Repeteix el mateix exercici utilitzant la propietat span */
+/* .container {
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20%;
+    grid-template-rows: auto auto auto;
+    justify-content: center;
+    align-items: center;
+    gap: 20px 10px;
+
+}
+
+.elem {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.item1 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+.item2 {
+    grid-column-start: 3;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+
+.item9{
+    grid-column: span 4;
+} */
+
+
+/* Ex10. L’element 3 ocupi 3 files fent servir span. */
+/* .container {
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20%;
+    grid-template-rows: auto auto auto;
+    justify-content: center;
+    align-items: center;
+    gap: 20px 10px;
+
+}
+
+.elem {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.item1 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+.item2 {
+    grid-column-start: 3;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+
+.item3{
+    grid-row: span 3;
+}
+
+.item9{
+    grid-column: span 4;
+} */
+
+
+/* Ex11. Fer els canvis en els elements 8 i 7 per mostrar la següent pantalla */
+/* .container {
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20%;
+    grid-template-rows: auto auto auto;
+    justify-content: center;
+    align-items: center;
+    gap: 20px 10px;
+
+}
+
+.elem {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.item1 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+.item2 {
+    grid-column-start: 3;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+
+.item3{
+    grid-row: span 3;
+}
+
+.item7{
+    grid-column-start:4 ;
+    grid-column-end:5 ;
+    grid-row-start: 3;
+    grid-row-end: 5;
+}
+
+.item8{
+    grid-column-start: 2;
+    grid-column-end: 4;
+}
+
+.item9{
+    grid-column: span 4;
+} */
+
+
+/* Ex12: Repetir l’exercici anterior fent servir les propietats: grid-row i grid-columns
+S’han de substituir les propietats grid-column-start, grid-column-end, 
+grid-row-start i grid-row-end per grid-row i grid-colum */
+
+/* .container {
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20%;
+    grid-template-rows: auto auto auto;
+    justify-content: center;
+    align-items: center;
+    gap: 20px 10px;
+
+}
+
+.elem {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.item1 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+.item2 {
+    grid-column-start: 3;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+
+.item3{
+    grid-row: span 3;
+}
+
+.item7{
+    grid-row: span 2;
+}
+
+.item8{
+    grid-column: span 2;
+}
+
+.item9{
+    grid-column: span 4;
+} */
+
+
+/* Ex13: Repetirem el mateix exercici però amb la propietat grid-template-areas i grid-area
+NOTA: No ha de tenir ni grid-columns ni grid-rows */
+/* .container {
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20%;
+    grid-template-rows: auto auto auto auto auto;
+    grid-template-areas:  
+    'uno uno dos dos'
+    'tres . dos dos'
+    'tres . . siete'
+    'tres ocho ocho siete'
+    'nueve nueve nueve nueve'
+     ;
+    justify-content: center;
+    align-items: center;
+    gap: 20px 10px;
+}
+
+.elem {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+
+}
+
+.item1 {
+    grid-area: uno;
+}
+
+.item2 {
+    grid-area: dos;
+}
+
+.item3{
+    grid-area: tres;
+}
+
+.item7{
+    grid-area: siete;
+}
+
+.item8{
+    grid-area: ocho;
+}
+
+.item9{
+    grid-area: nueve;
+} */
